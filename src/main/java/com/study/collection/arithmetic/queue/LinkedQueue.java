@@ -3,14 +3,14 @@ package com.study.collection.arithmetic.queue;
 import com.study.collection.arithmetic.LinkedTable.Node;
 
 /**
- * 链式队列就相当于，既含有头结点，也含有尾结点的单链表
+ * 链式队列就相当于，既含有首结点，也含有尾结点的单链表
  * @author pcc
  * @version 1.0.0
  * @className LinkedQueue
  * @date 2021-04-29 09:55
  */
 public class LinkedQueue implements IQueue{
-    Node front;//头结点
+    Node front;//首结点
     Node rear;//尾结点
 
     public LinkedQueue(){
@@ -19,8 +19,7 @@ public class LinkedQueue implements IQueue{
 
     @Override
     public void clear() {
-        front = null;
-        rear = null;
+        front = rear  = new Node();
 
     }
 

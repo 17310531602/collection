@@ -15,12 +15,12 @@ public class TestIQueue {
         iQueue.offer("赵柳");
         iQueue.offer("李琦");
         System.out.println(iQueue.length());
-
-        while(!iQueue.isEmpty())
-            System.out.println(iQueue.poll());
         System.out.println(iQueue.isEmpty());
-        System.out.println(iQueue.length());
-        System.out.println(iQueue.peek());
+//        while(!iQueue.isEmpty())
+//            System.out.println(iQueue.poll());
 
+        iQueue.clear();
+        System.out.println(iQueue.isEmpty());
+        System.out.println(iQueue.peek());
     }
 }
